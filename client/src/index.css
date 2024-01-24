@@ -1,0 +1,17 @@
+
+html, body,#root {
+  height: 100%; /* Ensures that the body takes the full viewport height */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  background-color: rgb(124, 255, 255);
+}
+
+.App{
+  height:100%;
+  margin-top: 0;
+  display: flex; /* Flex container */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+}
+
+

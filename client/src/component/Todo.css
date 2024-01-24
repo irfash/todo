@@ -1,0 +1,60 @@
+.todo{
+  box-sizing: border-box;
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+  width: 100%;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.todo::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 50%; 
+  width: 90%;
+  height: 1px;
+  background: #d3d3d3;
+  transform: translateX(-50%);
+}
+
+.todo-title{
+  flex-grow: 1;
+padding-right: auto;
+}
+.todo-title.completed{
+  text-decoration:line-through;
+}
+.btns{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.todo .svg-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-icon , .delete-icon{
+  height: auto;
+}
+
+.edit-icon {
+  width:22px;
+}
+ .delete-icon{
+  width:26px;
+}
+
+.des{
+  font-size: 1em;
+  margin: 0;
+  color:rgb(66, 66, 66);
+  padding: 10px 10px 10px 30px;
+
+}
