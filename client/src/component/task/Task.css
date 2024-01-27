@@ -21,9 +21,15 @@
 }
 
 .todo-title{
+  border: none;
   flex-grow: 1;
 padding-right: auto;
 }
+input:focus{
+  border: none;
+  outline: none;
+}
+
 .todo-title.completed{
   text-decoration:line-through;
 }
@@ -44,17 +50,23 @@ padding-right: auto;
   height: auto;
 }
 
-.edit-icon {
-  width:22px;
-}
+
  .delete-icon{
   width:26px;
 }
 
 .des{
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
   font-size: 1em;
   margin: 0;
   color:rgb(66, 66, 66);
   padding: 10px 10px 10px 30px;
 
+}
+
+textarea:focus{
+  border: none;
+  outline: none;
 }

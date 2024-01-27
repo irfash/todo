@@ -25,8 +25,9 @@ app.get('/:user_id/tasks',async(req,res)=>{
 })
 
 //create a task
-app.post('/:user_id/tasks/addtask',async(req,res)=>{
-   const {user_id} = req.params;
+app.post('/api/tasks',async(req,res)=>{
+	console.log(req.body);
+   const {user_id} = req.body;
    const {title,description} = req.body;
    if(!user_id || !title || !description || isNaN(user_id) ){
         return res.status(400).json({error:"Invalid user data"});

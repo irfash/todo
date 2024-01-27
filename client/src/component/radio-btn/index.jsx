@@ -1,6 +1,6 @@
 import React from "react";
-import "./Radio.css";
-const Radio = ({ status }) => {
+import "./RadioBtn.css";
+const RadioBtn= ({ status }) => {
   return (
     <svg
       className={`radio icon ${status ? "active" : ""}`}
@@ -40,4 +40,4 @@ const Radio = ({ status }) => {
   );
 };
 
-export default Radio;
+export default RadioBtn;

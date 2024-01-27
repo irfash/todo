@@ -1,0 +1,27 @@
+
+
+
+    .edit-icon {
+        width:22px;
+        
+    }
+    
+    .edit-icon {
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .pen-active {
+        transform: rotate(-45deg);
+        animation: bounce 2s linear infinite;
+        filter: drop-shadow(0 0 4px rgb(0, 255, 21)); /* Replace #color with your desired glow color */
+      }
+      
+      @keyframes bounce {
+        0%, 100% {
+          transform: translateY(0) rotate(-45deg);
+        }
+        50% {
+          transform: translateY(-10px) rotate(-45deg);
+        }
+      }
+      
